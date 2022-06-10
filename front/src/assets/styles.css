@@ -1,0 +1,122 @@
+:root {
+    --app-primary-color: #42b983;
+    --app-default-radius: 5px;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+nav {
+    padding: 30px;
+}
+
+nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+    color: var(--app-primary-color);
+}
+
+#recipe-search, #recipes {
+    width: 100%;
+    padding: 20px;
+}
+
+#recipe-search input {
+    border-radius:var(--app-default-radius);
+    width:250px;
+    display: block;
+    height: 45px;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    border-color: gray;
+    font-weight: bold;
+}
+
+.app-button {
+    display: block;
+    margin:3px auto;
+    background-color: var(--app-primary-color);
+    padding:5px;
+    border-radius:var(--app-default-radius);
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+
+#recipes h1 {
+    text-align:center;
+}
+
+#recipes table {
+    text-align: left;
+    width: 70%;
+    margin: auto;
+}
+
+#recipes table th {
+    border:1px solid gray;
+    border-radius: var(--app-default-radius);
+}
+
+#recipes table th, #recipes table td {
+    margin: 0;
+    min-width: 150px;
+    padding:5px;
+}
+
+.ingredient {
+    background-color: var(--app-primary-color);
+    color: white;
+    padding:3px 5px;
+    border-radius: 5px;
+    margin:5px 1px;
+    display: inline-block;
+}
+
+
+.recipe-form-container form {
+    width: 70%;
+    margin: auto;
+}
+
+.form-group {
+    padding:10px;
+    text-align: left;
+}
+
+.form-group input, .form-group select {
+    width:100%;
+    font-size:15px;
+}
+
+.form-group input {
+    height: 30px;
+}
+
+.app-success, .app-error {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    border-radius: var(--app-default-radius);
+    margin: 10px;
+    padding:10px;
+}
+
+.app-success {
+    border:2px solid green;
+    color: green;
+}
+
+.app-error {
+    border:2px solid red;
+    color: red;
+}
